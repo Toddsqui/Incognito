@@ -33,6 +33,8 @@ group :doc do
 end
 
 gem 'bootstrap-sass', '~> 3.3.4'
+gem 'simple_form'
+gem 'will_paginate', '~> 3.0.7'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
