@@ -1,4 +1,5 @@
 class PlacesController < ApplicationController
+	before_action :authenticate_user!, :only => [:new, :create]
 	def index
 		@places = Place.paginate(:page => params[:page], :per_page => 1)
 	end
@@ -8,8 +9,8 @@ def new
 end
 
 def create
-	Place.create(place_params)
-	redirect_to_root_path
+	current_user.places.create(place_params)
+	redirect_to root_path
 end
 
 private
