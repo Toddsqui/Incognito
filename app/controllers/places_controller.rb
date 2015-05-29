@@ -11,6 +11,11 @@ end
 
 def create
 	current_user.places.create(place_params)
+	if @place.valid?
+		redirect_to root_path
+	else
+		render :new, :status => :unprocessable_entity
+	end
 	redirect_to root_path
 end
 
@@ -33,6 +38,11 @@ def update
 	end
 	
 	@place.update_attributes(place_params)
+	if @place.valid?
+		redirect_to root_path
+	else
+		render :edit, :status => :unprocessable_entity
+	end
 	redirect_to root_path
 end
 
