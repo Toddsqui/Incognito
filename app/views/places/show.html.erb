@@ -51,6 +51,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       <div class="modal-body">
        <%= f.input :message %>
        <%= f.input :rating, :as => :select, :collection => Comment::RATINGS %>
+       <%= f.input :picture %>
        </div>
        <div class="modal-footer">
        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
