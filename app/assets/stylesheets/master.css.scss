@@ -95,15 +95,22 @@ blockquote p {
 
 .carousel-caption {
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 60px;
+	font-size: 45px;
 	font-weight: 100;
 	text-shadow: rgba(0,0,0,0.95) 2px 2px;
 	background-color: rgba(0,0,0,0.5);
-	width: 100px;
 	position: absolute;
 	left: 0;
 }
 
 .carousel {
 	box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.addcommenter {
+	margin: -46px 0 0 0;
+}
+
+.photoop {
+	margin: 0 0 0 710px;
 }
